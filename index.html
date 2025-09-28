@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 75'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M38.5 23C35.46 23 33 25.46 33 28.5C33 31.54 35.46 34 38.5 34C41.54 34 44 31.54 44 28.5C44 25.46 41.54 23 38.5 23ZM42 35.5L35 35.5V57L29 70H35L38.5 60L42 70H48L42 57V35.5ZM40 42L52 54H61V51H53L42 40L40 42ZM63 43C60.24 43 58 45.24 58 48C58 50.76 60.24 53 63 53C65.76 53 68 50.76 68 48C68 45.24 65.76 43 63 43ZM53 55H61L58 66L51 70L49 67L55 63V55H53ZM59 66L72 70L74 63L62 60L59 66Z' fill='%23006A4E' /%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>CareConnect - كير كونكت</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Cairo', 'sans-serif'],
+            },
+            colors: {
+              'primary': { // Deep Green
+                '50': '#f0f7f5',
+                '100': '#e0efe9',
+                '200': '#c2e0d4',
+                '300': '#a3d0be',
+                '400': '#66b18f',
+                '500': '#29915f',
+                '600': '#007b48',
+                '700': '#006A4E',
+                '800': '#00543e',
+                '900': '#004433'
+              },
+              'secondary': { // Light Green
+                '50': '#f8fbee',
+                '100': '#f1f8dd',
+                '200': '#e3f1bc',
+                '300': '#d5ea9a',
+                '400': '#b9dd68',
+                '500': '#96C83D',
+                '600': '#87b437',
+                '700': '#6e902c',
+                '800': '#556c22',
+                '900': '#3c4817'
+              },
+              'accent': { // Teal
+                '50': '#edf9f8',
+                '100': '#dcf4f2',
+                '200': '#b8e8e4',
+                '300': '#95ddd6',
+                '400': '#71d1c8',
+                '500': '#40C0B4',
+                '600': '#39ada2',
+                '700': '#329b90',
+                '800': '#2b887e',
+                '900': '#24766c'
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.8s ease-in-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
